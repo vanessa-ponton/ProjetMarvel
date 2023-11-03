@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #E43939;
+    display: inline-flex;
+    width: 100%;
+
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+
+ul {
+
+    list-style: none;
+    text-align: center;
+    padding: 30px;
+    margin: 10px;
+}
+
+ul a {
+    text-decoration: none;
+}
