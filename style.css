@@ -17,7 +17,7 @@ h1 {
 }
 
 ul {
-
+    display: block;
     list-style: none;
     text-align: center;
     padding: 30px;
@@ -26,4 +26,5 @@ ul {
 
 ul a {
     text-decoration: none;
+    
 }
