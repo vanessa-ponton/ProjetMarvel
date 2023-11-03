@@ -1,10 +1,6 @@
-body {
-    display: flex;
-}
-
-
 
 
 nav {
+    display: flexbox;
     background-color: #E43939;
 }
