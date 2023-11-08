@@ -6,30 +6,29 @@
 
 nav {
     background-color: #E43939;
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 00f1771027d7b71af2709ce288b201c658917243
 }
 
 h1 {
     color: white;
-    text-align: center;
-    padding: 20px;
-    margin: auto;
 }
 
 ul {
-    display: block;
     list-style: none;
-    text-align: center;
-    padding: 30px;
-    margin: 10px;
 }
 
 ul a {
     text-decoration: none;
 
+<<<<<<< HEAD
 }
 
 footer {
     
+=======
+>>>>>>> 00f1771027d7b71af2709ce288b201c658917243
 }
