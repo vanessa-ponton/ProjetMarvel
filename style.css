@@ -5,7 +5,7 @@
 }
 
 nav {
-    background-color: #E43939;
+    background-color: #6a0c0b;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -38,7 +38,7 @@ li a {
 
 li a:hover {
     background-color: white;
-    color: #E43939;
+    color: #6a0c0b;
     border-radius: 15px;
     /* padding: 10px; */
 }
@@ -52,12 +52,14 @@ main {
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
-    background-color: lightgrey;
-    color: #E43939;
+    background-color: #b97d10;
+    color: #6a0c0b;
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 3rem;
+    margin: auto;
+
 }
 
 p {
@@ -66,14 +68,25 @@ p {
     padding: 50px 10px 20px;*/
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 20px;
     max-width: 800px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+img {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+
+
 
 footer {
     height: 60px;
-    background-color: lightgray;
+    background-color: #6a0c0b;
     color: white;
     padding: 1rem 1.5rem;
 }
