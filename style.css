@@ -79,11 +79,33 @@ img {
     justify-content: center;
     width: 75%;
     margin: auto;
+    margin-top: 20px;
     border-radius: 20px;
 }
 
+h3 {
+    text-decoration: underline #6a0c0b;
+    padding: 2px;
+    margin: 2px;
+}
 
+button {
+    border-radius: 5px;
+    background-color: #b97d10;
+    color: #6a0c0b;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    padding: 2px;
+    margin: 2px;
+}
 
+button:hover {
+    background-color: #6a0c0b;
+    color: white;
+    padding: 2px;
+    margin: 2px;
+}
 
 footer {
     height: 60px;
