@@ -18,7 +18,7 @@ const startQuizz = document.querySelector("#wq");
 // on 
 start.addEventListener("click", () => {
     question1.style.display = "block";
-    wq.style.display = "none";
+    startQuizz.style.display = "none";
 })
 
 // apres la reponse de user on passe la question suivante :
@@ -37,7 +37,8 @@ btns.forEach((btn) => {
     })
 })
 
-question1.addEventListener("click", () => {
-    question2.style.display = "block";
-    question1.style.display = "none";
+/*question2.addEventListener("click", () => {
+    question3.style.display = "block";
+    question2.style.display = "none";
 })
+*/
