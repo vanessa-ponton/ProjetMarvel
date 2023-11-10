@@ -7,21 +7,22 @@
 // stocker le score 
 let score = 0;
 // on doit clic sur c'est parti
-const start = document.querySelector("#start")
+const start = document.querySelector("#start");
 // cibler les questions
-const question1 = document.querySelector("#q1")
-const question2 = document.querySelector("#q2")
+const question1 = document.querySelector("#q1");
+const question2 = document.querySelector("#q2");
+const question3 = document.querySelector("#q3");
+const startQuizz = document.querySelector("#wq");
 // ecouter l'event click
 // on affiche la premiere question
 // on 
 start.addEventListener("click", () => {
-    question1.style.display = "block"
-    start.setAttribute("disabled", "true");
-    start.style.opacity = ".5"
+    question1.style.display = "block";
+    wq.style.display = "none";
 })
 
 // apres la reponse de user on passe la question suivante :
-const btns = document.querySelectorAll(".question1")
+const btns = document.querySelectorAll(".question1");
 btns.forEach((btn) => {
     btn.addEventListener("click", () => {
         if (btn.id === "good-answer") {
