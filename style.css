@@ -113,3 +113,16 @@ footer {
     color: white;
     padding: 1rem 1.5rem;
 }
+
+.question-screen,
+.question-screen,
+.question-screen {
+    display: none;
+}
+
+.end-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px
+}
