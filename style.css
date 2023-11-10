@@ -83,18 +83,22 @@ img {
     border-radius: 20px;
 }
 
-h3 {
+h3,
+h4,
+span {
     text-decoration: underline #6a0c0b;
     padding: 2px;
     margin: 2px;
+    font-size: xx-large;
 }
+
 
 button {
     border-radius: 5px;
     background-color: #b97d10;
     color: #6a0c0b;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: medium;
+    font-size: x-large;
     font-weight: bold;
     padding: 2px;
     margin: 2px;
