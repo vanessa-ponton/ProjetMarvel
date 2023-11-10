@@ -36,3 +36,8 @@ btns.forEach((btn) => {
 
     })
 })
+
+question1.addEventListener("click", () => {
+    question2.style.display = "block";
+    question1.style.display = "none";
+})
