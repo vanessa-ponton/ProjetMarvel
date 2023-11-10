@@ -13,6 +13,8 @@ const question1 = document.querySelector("#q1");
 const question2 = document.querySelector("#q2");
 const question3 = document.querySelector("#q3");
 const startQuizz = document.querySelector("#wq");
+const endQuizz = document.querySelector("#score");
+const span = document.querySelector("span");
 // ecouter l'event click
 // on affiche la premiere question
 // on 
@@ -29,16 +31,53 @@ btns.forEach((btn) => {
             score++
             question1.style.display = "none"
             question2.style.display = "block"
+            span.textContent++
         } else {
             question1.style.display = "none"
             question2.style.display = "block"
         }
-
+        console.log("score :>>", score)
     })
 })
-
-/*question2.addEventListener("click", () => {
-    question3.style.display = "block";
-    question2.style.display = "none";
+const btns2 = document.querySelectorAll(".question2");
+btns2.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        if (btn.id === "good-answer") {
+            score++
+            question2.style.display = "none"
+            question3.style.display = "block"
+            span.textContent++
+        } else {
+            question2.style.display = "none"
+            question3.style.display = "block"
+        }
+        console.log("score :>>", score)
+    })
 })
-*/
+const btns3 = document.querySelectorAll(".question3");
+btns3.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        if (btn.id === "good-answer") {
+            score++
+            question3.style.display = "none"
+            endQuizz.style.display = "block"
+            span.textContent++
+        } else {
+            question3.style.display = "none"
+            endQuizz.style.display = "block"
+        } console.log("score :>>", score)
+        if (score === 3) {
+            span.textContent = ("Bravo vous avez" + " " + `${score}` + " " + "bonnes réponses! Vous êtes un expert!")
+        } else if (score === 2) {
+            span.textContent = ("Mouais ! vous avez" + " " + `${score}` + " " + "bonnes réponses! Vous ne connaissez pas tout !")
+        } else if (score === 1) {
+            span.textContent = ("Bof ! vous avez" + " " + `${score}` + " " + "bonnes réponses! Vous connaissez pas vraiment cet Univers!")
+        } else {
+            span.textContent = ("Nul !" + " " + `${score}` + " " + "bonnes réponses! Vous ne connaissez pas les Marvel !")
+        }
+    })
+
+})
+
+
+
