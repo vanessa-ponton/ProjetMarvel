@@ -71,9 +71,9 @@ btns3.forEach((btn) => {
         } else if (score === 2) {
             span.textContent = ("Mouais ! vous avez" + " " + `${score}` + " " + "bonnes réponses! Vous ne connaissez pas tout !")
         } else if (score === 1) {
-            span.textContent = ("Bof ! vous avez" + " " + `${score}` + " " + "bonnes réponses! Vous connaissez pas vraiment cet Univers!")
+            span.textContent = ("Bof ! vous avez" + " " + `${score}` + " " + "bonne réponse! Vous connaissez pas vraiment cet Univers!")
         } else {
-            span.textContent = ("Nul !" + " " + `${score}` + " " + "bonnes réponses! Vous ne connaissez pas les Marvel !")
+            span.textContent = ("Nul !" + " " + `${score}` + " " + "bonne réponse! Vous ne connaissez pas les Marvel !")
         }
     })
 
