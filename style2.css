@@ -30,9 +30,12 @@ ul {
 }
 
 .div {
-    display: grid;
-    width: 500px;
-    height: 500px;
+    display: flex;
+    max-width: 150px;
+}
+
+img {
+    width: 75%;
 }
 
 li a {
@@ -80,14 +83,14 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-img {
+/*img {
     display: flex;
     justify-content: center;
     width: 75%;
     margin: auto;
     margin-top: 20px;
     border-radius: 20px;
-}
+}*/
 
 h3,
 h4,
