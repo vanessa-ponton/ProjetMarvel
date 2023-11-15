@@ -29,17 +29,20 @@ ul {
     /* margin: 0; */
 }
 
-.div {
-    /*display: flex;*/
-    width: 200px;
-    height: 50px;
+div {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100px;
+    height: 200px;
     position: relative;
 }
 
 img {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    height: 200px;
 }
 
 li a {
@@ -59,7 +62,7 @@ li a:hover {
 
 main {
     min-height: calc(100vh - 160px);
-    display: flex;
+    display: grid;
     /*text-align:start;*/
     margin: 20px;
     padding: 20px;
@@ -69,6 +72,8 @@ main {
 }
 
 h2 {
+    display: grid;
+    text-align: center;
     font-size: 3rem;
     margin: auto;
 
@@ -95,7 +100,7 @@ p {
     border-radius: 20px;
 }*/
 
-h3,
+/*h3,
 h4,
 span {
     text-decoration: underline #6a0c0b;
@@ -121,7 +126,7 @@ button:hover {
     color: white;
     padding: 2px;
     margin: 2px;
-}
+}*/
 
 footer {
     height: 60px;
@@ -130,7 +135,7 @@ footer {
     padding: 1rem 1.5rem;
 }
 
-.question-screen,
+/*.question-screen,
 .question-screen,
 .question-screen {
     display: none;
@@ -141,4 +146,4 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 5px
-}
+} */
