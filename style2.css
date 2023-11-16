@@ -31,18 +31,18 @@ ul {
 
 div {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    width: 100px;
-    height: 200px;
+    width: 200px;
+    height: 300px;
     position: relative;
+
 }
 
 img {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
     object-fit: cover;
-    width: 100px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
 }
 
 li a {
@@ -62,7 +62,7 @@ li a:hover {
 
 main {
     min-height: calc(100vh - 160px);
-    display: grid;
+    display: flex;
     /*text-align:start;*/
     margin: 20px;
     padding: 20px;
@@ -91,7 +91,7 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/*img {
+/* img {
     display: flex;
     justify-content: center;
     width: 75%;
@@ -100,7 +100,7 @@ p {
     border-radius: 20px;
 }*/
 
-/*h3,
+h3,
 h4,
 span {
     text-decoration: underline #6a0c0b;
