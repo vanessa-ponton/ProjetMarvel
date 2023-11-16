@@ -29,20 +29,11 @@ ul {
     /* margin: 0; */
 }
 
-div {
-    display: grid;
-    width: 200px;
-    height: 300px;
-    position: relative;
-
-}
-
 img {
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
     object-fit: cover;
     width: 100%;
     height: 100%;
+    border-radius: 20px;
 }
 
 li a {
@@ -62,8 +53,9 @@ li a:hover {
 
 main {
     min-height: calc(100vh - 160px);
-    display: flex;
-    /*text-align:start;*/
+    display: grid;
+    text-align: center;
+    max-width: 100%;
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
@@ -71,9 +63,15 @@ main {
     color: #6a0c0b;
 }
 
+div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
 h2 {
-    display: grid;
-    text-align: center;
     font-size: 3rem;
     margin: auto;
 
@@ -91,14 +89,16 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* img {
-    display: flex;
+img {
+    /*display: grid;
     justify-content: center;
     width: 75%;
     margin: auto;
     margin-top: 20px;
-    border-radius: 20px;
-}*/
+    border-radius: 20px;*/
+    width: 300px;
+    height: 400px;
+}
 
 h3,
 h4,
@@ -126,9 +126,9 @@ button:hover {
     color: white;
     padding: 2px;
     margin: 2px;
-}*/
+}
 
-footer {
+*/ footer {
     height: 60px;
     background-color: #6a0c0b;
     color: white;
