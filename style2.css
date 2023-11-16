@@ -30,7 +30,7 @@ ul {
 }
 
 img {
-    position: relative;
+
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -72,6 +72,7 @@ main {
 }
 
 div {
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -90,7 +91,7 @@ span {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    height: 200px;
+    height: 300px;
     opacity: 0;
 }
 
