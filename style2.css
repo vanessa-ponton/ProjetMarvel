@@ -76,6 +76,26 @@ div {
     flex-wrap: wrap;
     padding: 20px;
     justify-content: flex-start;
+    position: relative;
+}
+
+span {
+    position: absolute;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    overflow: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*display: none;*/
+    height: 200px;
+    opacity: 0;
+}
+
+span:hover {
+    /*display: block;*/
+    opacity: 100%;
 }
 
 h2 {
@@ -106,16 +126,6 @@ img {
     width: 300px;
     height: 400px;
 }
-
-h3,
-h4,
-span {
-    text-decoration: underline #6a0c0b;
-    padding: 2px;
-    margin: 2px;
-    font-size: xx-large;
-}
-
 
 button {
     border-radius: 5px;

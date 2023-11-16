@@ -23,7 +23,7 @@ start.addEventListener("click", () => {
     startQuizz.style.display = "none";
 })
 
-// apres la reponse de user on passe la question suivante :
+// apres la reponse de user on passe  à la question suivante :
 const btns = document.querySelectorAll(".question1");
 btns.forEach((btn) => {
     btn.addEventListener("click", () => {
