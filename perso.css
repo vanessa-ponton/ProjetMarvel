@@ -31,9 +31,7 @@
     bottom: 0;
 }
 
-.card-img:hover {
-    opacity: .8;
-}
+.card-img:hover {}
 
 .card-content {
     display: flex;
