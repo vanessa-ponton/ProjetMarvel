@@ -1,9 +1,12 @@
 .img {
     width: 30%;
+    margin-right: 50px;
+
 }
 
 .stanlee {
     width: 30%;
+    margin-right: 50px;
 }
 
 article {
@@ -15,6 +18,8 @@ article {
 .origin {
     margin: 50px;
     justify-content: center;
+    display: grid;
+    align-items: center;
 
 }
 
