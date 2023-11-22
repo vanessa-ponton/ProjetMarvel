@@ -1,0 +1,23 @@
+.img {
+    width: 30%;
+}
+
+.stanlee {
+    width: 30%;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.origin {
+    margin: 50px;
+    justify-content: center;
+
+}
+
+.title-about {
+    margin-bottom: 20px;
+}
