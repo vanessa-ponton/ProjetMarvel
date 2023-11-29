@@ -1,15 +1,5 @@
 const cardsList = [
     {
-        src: "Images/kang-le-conquerant.jpg",
-        title: "Kang Le Conquérant",
-        description: "Génie milliardaire et playboy, Tony Stark conçoit une armure high-tech pour combattre le crime.Son intelligence et son ego en font un leader charismatique des Avengers.",
-    },
-    {
-        src: "Images/kang-le-conquerant.jpg",
-        title: "Kang Le Conquérant",
-        description: "Voyageant à travers le temps, Kang est un super-vilain cosmique. Doté d'une intelligence exceptionnelle, il manipule les réalités pour asseoir son pouvoir tyrannique,posant des défis incommensurables",
-    },
-    {
         src: "Images/ironman.png",
         title: "IronMan",
         description: "Génie milliardaire et playboy, Tony Stark conçoit une armure high-tech pour combattre le crime. Son intelligence et son ego en font un leader charismatique des Avengers.",
@@ -189,32 +179,37 @@ const cardsList = [
 // injecter article dans la div cards 
 //cards.appendChild(article);
 // on va creer un element pour chaque argument de l'objet et l'injecter dans l'article 
-const createElement = cardsList.map((card) => {
-    const cards = document.getElementsByClassName("cards");
+const createElement = cardsList.map((cards) => {
+    const cardz = document.querySelector(".cards");
     const article = document.createElement("article");
     article.className = "card";
-    cards.appendChild(article);
+    //cardz.appendChild(article);
     //cibler la balise article avec la class card
-    const articles = document.getElementsByClassName("card");
+    //const articles = document.querySelector(".card");
     //creer la balise img avec la class card-img
     const img = document.createElement("img");
     img.className = "card-img";
+    img.src = cards.src;
     //creer la balise div avec la class card-content
     const div = document.createElement("div");
     div.className = "card-content";
     //injecter img et div dans article
-    articles.appendChild(img);
-    articles.appendChild(div);
+
     //cibler la balise div avec la class card-content
-    const divs = document.getElementsByClassName("card-content");
+    //nst div = document.querySelector(".card-content");
     //creer la balise h1 avec la class card-title
     const title = document.createElement("h1");
     title.className = "card-title";
+    title.textContent = cards.title;
     //creer la balise p avec la class card-p
     const text = document.createElement("p");
     text.className = "card-p";
+    text.textContent = cards.description;
     //injecter h1 et p dans la div card-content
-    divs.appendChild(title);
-    divs.appendChild(text);
+    cardz.appendChild(article);
+    article.appendChild(img);
+    article.appendChild(div);
+    div.appendChild(title);
+    div.appendChild(text);
 });
 
