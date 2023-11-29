@@ -182,12 +182,12 @@ const cardsList = [
 </article> */}
 
 // cibler la balise div avec la classe cards
-const cards = document.getElementsByClassName("cards");
+//const cards = document.getElementsByClassName("cards");
 // creer la balise article avec la classe card 
-const article = document.createElement("article");
-article.className = "card";
+//const article = document.createElement("article");
+//article.className = "card";
 // injecter article dans la div cards 
-cards.appendChild(article);
+//cards.appendChild(article);
 // on va creer un element pour chaque argument de l'objet et l'injecter dans l'article 
 const createElement = cardsList.map((card) => {
     const cards = document.getElementsByClassName("cards");
