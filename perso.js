@@ -2,6 +2,16 @@ const cards = [
     {
         src: "Images/kang-le-conquerant.jpg",
         title: "Kang Le Conquérant",
+        description: "Génie milliardaire et playboy, Tony Stark conçoit une armure high-tech pour combattre le crime.Son intelligence et son ego en font un leader charismatique des Avengers.",
+    },
+    {
+        src: "Images/kang-le-conquerant.jpg",
+        title: "Kang Le Conquérant",
+        description: "Voyageant à travers le temps, Kang est un super-vilain cosmique. Doté d'une intelligence exceptionnelle, il manipule les réalités pour asseoir son pouvoir tyrannique,posant des défis incommensurables",
+    },
+    {
+        src: "Images/kang-le-conquerant.jpg",
+        title: "Kang Le Conquérant",
         description: "Voyageant à travers le temps, Kang est un super-vilain cosmique. Doté d'une intelligence exceptionnelle, il manipule les réalités pour asseoir son pouvoir tyrannique,posant des défis incommensurables",
     }
 ]
