@@ -1,4 +1,4 @@
-const cardz = [
+const cardsList = [
     {
         src: "Images/kang-le-conquerant.jpg",
         title: "Kang Le Conquérant",
@@ -188,14 +188,33 @@ const article = document.createElement("article");
 article.className = "card";
 // injecter article dans la div cards 
 cards.appendChild(article);
-// on va creer un element pour chaque arguments de l'objet et l'injecter dans l'article 
-const createElement = cardz.map((card) => {
-    return
-    <article>
-        <img class="card-img" src={cardz.src} />
-        <div class="card-content">
-            <h1 class="card-title">{cardz.title}</h1>
-            <p class="card-p">{cardz.description}</p>
-        </div>
-    </article>
+// on va creer un element pour chaque argument de l'objet et l'injecter dans l'article 
+const createElement = cardsList.map((card) => {
+    const cards = document.getElementsByClassName("cards");
+    const article = document.createElement("article");
+    article.className = "card";
+    cards.appendChild(article);
+    //cibler la balise article avec la class card
+    const articles = document.getElementsByClassName("card");
+    //creer la balise img avec la class card-img
+    const img = document.createElement("img");
+    img.className = "card-img";
+    //creer la balise div avec la class card-content
+    const div = document.createElement("div");
+    div.className = "card-content";
+    //injecter img et div dans article
+    articles.appendChild(img);
+    articles.appendChild(div);
+    //cibler la balise div avec la class card-content
+    const divs = document.getElementsByClassName("card-content");
+    //creer la balise h1 avec la class card-title
+    const title = document.createElement("h1");
+    title.className = "card-title";
+    //creer la balise p avec la class card-p
+    const text = document.createElement("p");
+    text.className = "card-p";
+    //injecter h1 et p dans la div card-content
+    divs.appendChild(title);
+    divs.appendChild(text);
 });
+
